@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Random</string>
+
+    <string name="dialog_alert_title">Alert</string>
+    <!--Random List-->
+    <string name="message_empty_random_list">There are no users downloaded yet. Push the button below to generate a random list</string>
+
+    <!--Favorite List-->
+    <string name="message_empty_favorite_list">You do not have any favorite user yet. Push the icon in the list to mark as favorite</string>
+
+    <!--Details-->
+    <string name="details_gender">Gender</string>
+    <string name="details_name">Name / Surname</string>
+    <string name="details_location">Location</string>
+    <string name="details_date">Registered date</string>
+    <string name="details_email">Email</string>
+
+    <!--Dialogs-->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!--Errors-->
+    <string name="generic_api_error">Server is not available at the moment. Please, try again later.</string>
+    <string name="generic_action_error">Oops! Your action could not be completed. Try again later</string>
+    <string name="gps_error">GPS Service is not available at the moment. Please, try again later.</string>
+    <string name="network_error">Your device seems to be offline. Please, check your connectivity and try again.</string>
+    <string name="action_search">Filter</string>
+
+    <!--Fragment Tags-->
+    <string name="fragment_tag_favorite_list">favorite_list_fragment</string>
+    <string name="fragment_tag_random_list">random_list_fragment</string>
+    <string name="fragment_tag_nearby_list">fragment_tag_nearby_list</string>
+
+    <!--Units-->
+    <string name="distance_unit_km">km</string>
+
+
+
+</resources>

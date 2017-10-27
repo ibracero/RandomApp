@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/user_info_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/user_item_padding"
+        android:src="@drawable/ic_delete" />
+
+    <RelativeLayout
+        android:id="@id/user_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/button_delete"
+        android:layout_toRightOf="@+id/button_favorite"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/user_item_padding"
+        android:paddingRight="@dimen/user_item_padding"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/image_view_user_profile"
+            android:layout_width="@dimen/user_image_size"
+            android:layout_height="@dimen/user_image_size"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            tools:src="@drawable/ic_placeholder_person" />
+
+        <LinearLayout
+            android:id="@+id/layout_first_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_view_user_profile"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="John Doe Whatever Ever Ever" />
+
+            <TextView
+                android:id="@+id/text_view_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingLeft="@dimen/user_item_padding"
+                tools:text="+34 666 666 666" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text_view_email"
+            android:layout_alignParentRight="true"
+            android:maxLength="7"
+            android:paddingLeft="@dimen/user_item_padding"
+            android:visibility="gone"
+            tools:text="5.82km"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@id/text_view_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_first_row"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_toLeftOf="@id/text_view_distance"
+            android:layout_toRightOf="@id/image_view_user_profile"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            tools:text="johndoewhatever@randomco.com" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/button_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/user_info_layout"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorFavoriteUserBackground"
+        android:padding="@dimen/user_item_padding"
+        android:src="@drawable/ic_favorite_selected" />
+
+
+</RelativeLayout>

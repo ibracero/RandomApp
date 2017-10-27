@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+gradlew
+*.bat
+/gradle/
+/.idea/
+
+kit
+
+data/src/main/java/com\.tirea\.taxi\.data/messaging/model/RemoteKitMessageData\.java
+
+data/src/main/java/com\.tirea\.taxi\.data/messaging/model/RemoteKitNotificationData\.java
